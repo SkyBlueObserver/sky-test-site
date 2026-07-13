@@ -10,8 +10,15 @@
 <ul>
     <li><a href="pdf.html">PDF Test</a></li>
     <li><a href="model.html">3D Model Test</a></li>
-    <a href="https://www.merckvaccines.com/vaxneuvancepneumovax23/">PDF via redirect</a>
+    <li><a href="https://www.merckvaccines.com/vaxneuvancepneumovax23/">PDF via redirect</a></li>
 </ul>
+
+<div id="shadow-host"></div>
+<script>
+  const host = document.getElementById('shadow-host');
+  const shadow = host.attachShadow({ mode: 'open' });
+  shadow.innerHTML = '<a href="https://www.merckvaccines.com/vaxneuvancepneumovax23/">PDF via shadow DOM</a>';
+</script>
 
 </body>
 </html>
