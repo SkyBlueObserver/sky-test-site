@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://skyblueobserver.github.io/sky-test-site/sitemap.xml
