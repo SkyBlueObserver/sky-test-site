@@ -3,4 +3,19 @@
   <url>
     <loc>https://www.merckvaccines.com/vaxneuvancepneumovax23/</loc>
   </url>
+  <url>
+    <loc>https://skyblueobserver.github.io/sky-test-site/astronaut.glb</loc>
+  </url>
+  <url>
+    <loc>https://skyblueobserver.github.io/sky-test-site/helmet.gltf</loc>
+  </url>
+  <url>
+    <loc>https://skyblueobserver.github.io/sky-test-site/model.obj</loc>
+  </url>
+  <url>
+    <loc>https://skyblueobserver.github.io/sky-test-site/model.stl</loc>
+  </url>
+  <url>
+    <loc>https://skyblueobserver.github.io/sky-test-site/model.usdz</loc>
+  </url>
 </urlset>
