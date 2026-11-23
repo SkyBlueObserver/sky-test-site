@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fortune</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 4rem auto; text-align: center; }
+    #fortune { font-size: 1.3rem; font-style: italic; min-height: 3em; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+
+  <h1>Fortune Cookie</h1>
+  <p id="fortune"></p>
+  <button onclick="newFortune()">Crack another</button>
+  <p><a href="index.html">&larr; Back</a></p>
+
+  <script>
+    const fortunes = [
+      "A bug you cannot reproduce is a bug that will return.",
+      "The cookie you reject today is the one you debug tomorrow.",
+      "Ship it, then watch it closely.",
+      "The audit that finds nothing wrong hasn't looked hard enough.",
+      "Today's workaround is tomorrow's legacy code.",
+      "A green checkmark is not the same as a correct answer.",
+    ];
+    function newFortune() {
+      document.getElementById('fortune').textContent =
+        fortunes[Math.floor(Math.random() * fortunes.length)];
+    }
+    newFortune();
+  </script>
+
+</body>
+</html>

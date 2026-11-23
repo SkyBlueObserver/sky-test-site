@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Ring</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 4rem auto; text-align: center; transition: background-color 0.4s ease; }
+    #mood { font-size: 2rem; margin: 1.5rem 0; }
+    button { padding: 0.5rem 1rem; }
+    a { display: inline-block; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <h1>Mood Ring</h1>
+  <div id="mood"></div>
+  <button onclick="newMood()">Roll again</button>
+  <p><a href="index.html">&larr; Back</a></p>
+
+  <script>
+    const moods = [
+      { name: "Curious", color: "#cdeffd" },
+      { name: "Focused", color: "#d9f2d0" },
+      { name: "Restless", color: "#ffe3c9" },
+      { name: "Content", color: "#e7d9f7" },
+      { name: "Skeptical", color: "#ffd6d6" },
+      { name: "Inspired", color: "#fff4bd" },
+    ];
+    function newMood() {
+      const m = moods[Math.floor(Math.random() * moods.length)];
+      document.body.style.backgroundColor = m.color;
+      document.getElementById('mood').textContent = m.name;
+    }
+    newMood();
+  </script>
+
+</body>
+</html>
