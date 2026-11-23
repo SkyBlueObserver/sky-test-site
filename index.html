@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Crawler Test Site</title>
+  <meta charset="UTF-8">
+  <title>Test Site</title>
 </head>
 <body>
 
-<h1>Crawler Test Site</h1>
+  <h1>Test Site</h1>
+  <p>A simple page of links for testing.</p>
 
-<ul>
-    <li><a href="https://skyblueobserver.github.io/sky-test-site/hello_world.pdf">PDF</a></li>
-    <li><a href="https://www.merckvaccines.com/vaxneuvancepneumovax23/">PDF via redirect</a></li>
-</ul>
+  <ul>
+    <li><a href="https://www.wikipedia.org/">An external link</a></li>
+    <li><a href="https://github.com/SkyBlueObserver/sky-test-site">This site's repo</a></li>
+    <li><a href="#about">A page section</a></li>
+  </ul>
 
-<h2>3D Model Direct Links</h2>
-<ul>
-    <li><a href="astronaut.glb">GLB Model</a></li>
-    <li><a href="helmet.gltf">GLTF Model</a></li>
-    <li><a href="model.obj">OBJ Model</a></li>
-    <li><a href="model.stl">STL Model</a></li>
-    <li><a href="model.usdz">USDZ Model</a></li>
-</ul>
-
-<div id="shadow-host"></div>
-<script>
-  const host = document.getElementById('shadow-host');
-  const shadow = host.attachShadow({ mode: 'open' });
-  shadow.innerHTML = '<a href="https://www.merckvaccines.com/vaxneuvancepneumovax23/">PDF via shadow DOM</a>';
-</script>
+  <h2 id="about">About</h2>
+  <p>This is just a placeholder section to link to.</p>
 
 </body>
 </html>
